@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel = 'stylesheet' href = '../tela_login/tela_login_CSS.css'>
+    <script text = 'text/javascript' src = '../tela_login/tela_login_JS.js'></script>
+</head>
+<body>
+    
+<div class ='conteudo_total tela_fundo_degrade'>
+
+    <div class ='conteudo_mudar_aparencia'>
+        <div class = 'conteudo_mudar_tela_fundo'>
+            <h3>Mudar tela de fundo</h3>
+            <button onclick="mudar_tela_fundo('tela_fundo_imagem')" botao_mudar_tela_fundo_imagem>Imagem</button>
+            <button onclick="mudar_tela_fundo('tela_fundo_degrade')" botao_mudar_tela_fundo_degrade class ='mudanca_selecionada'>Efeito degradê</button>
+        </div>
+    </div>
+
+    <div class ='conteudo_tela_login'>
+
+        <h2>Udemy</h2>
+        <div class ='login_rede_sociais'>
+            <a href = '#facebook'>Continuar com Facebook</a>
+            <a href = '#google'>Continuar com Google</a>
+            <a href = '#apple'>Continuar com Apple</a>
+        </div>
+
+        <div class ='login_usuario'>
+            <img class ='icone_email' src = './imagens_tela_login/icone_email.ico'>
+
+            <input type ='email' placeholder = 'Email...'>
+
+            <img class ='icone_senha' src = './imagens_tela_login/icone_senha.ico'>
+
+            <input type ='password' placeholder = 'Senha...'>
+        </div>
+
+        <div class ='autenticacao'>
+            <button onclick = 'fazer_login()'>Fazer login</button>
+            <p>ou <a href = '#esqueci_minha_senha'>Esqueci minha senha</a></p>
+            <p>Não tem uma conta ? <a href = '#cadastre_se'>Cadastre-se</a></p>
+        </div>
+
+    </div>
+    
+</div>
+
+</body>
+</html>
