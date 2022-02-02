@@ -44,18 +44,19 @@
 
             <div class ='conteudo_navegacao'>
                 <ul>
-                    <li><button onmouseenter="mostrar_popup('popup_noticias')">Notícias</button></li>
+                    <li><button onclick="mostrar_popup('popup_noticias')">Notícias</button></li>
                     <li><a href = '#'>Últimas notícias</a></li>
                     <li><a href = '#'>Mais lidas</a></li>
                     <li><a href = '#'>Tutoriais</a></li>
                     <li><a href = '#'>Colunas</a></li>
-                    <li><button onmouseenter="mostrar_popup('popup_comparar')">Comparar</button></li>
-                    <li><button onmouseenter="mostrar_popup('popup_cupons_descontos')">Cupons de Descontos</button></li>
+                    <li><button onclick="mostrar_popup('popup_comparar')">Comparar</button></li>
+                    <li><button onclick="mostrar_popup('popup_cupons_descontos')">Cupons de Descontos</button></li>
                     <li><a href = '#'>Testes de Velocidade</a></li>
                 </ul>
 
                 <div id ='popup_conteudo_navegacao' class ='popup_conteudo_navegacao ocultar'>
-                    <div onmouseleave="fechar_popup()" id ='popup_noticias' class ='popup_noticias ocultar'>
+                    <button onclick = 'fechar_popup_conteudo_navegacao("popup_conteudo_navegacao")'>X</button>
+                    <div id ='popup_noticias' class ='popup_noticias ocultar'>
                         <ul>
                             <li><a href ='#'>Software</a></li>
                             <li><a href = '#'>Segurança</a></li>
@@ -90,13 +91,13 @@
                             </div>
                         </div>
                     </div>
-                    <div  onmouseleave="fechar_popup()" id ='popup_comparar' class ='popup_comparar ocultar'>
+                    <div id ='popup_comparar' class ='popup_comparar ocultar'>
                         <ul>
                             <li><a href ='#'>Comparar TecInfo</a></li>
                             <li><a href = '#'>Comparar Celulares</a></li>
                         </ul>
                     </div>
-                    <div  onmouseleave="fechar_popup()" id ='popup_cupons_descontos' class ='popup_cupons_descontos ocultar'>
+                    <div id ='popup_cupons_descontos' class ='popup_cupons_descontos ocultar'>
                         <ul>
                             <li><a href ='#'>Cupom Casas Bahia</a></li>
                             <li><a href = '#'>Cupom KaBum!</a></li>
@@ -211,8 +212,6 @@
     </div>
 
 </div>
-
-
 
 </body>
 </html>
