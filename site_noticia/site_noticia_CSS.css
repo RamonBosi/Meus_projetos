@@ -1,0 +1,439 @@
+@font-face {
+    font-family: 'fonte titulo';
+    src: url('./fontes/logo/computerfont/Computerfont.ttf') format('truetype');
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(179, 179, 179);
+    margin:0;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+ 
+img{
+    display: block;
+    margin: 0 auto 0;
+}
+
+.conteudo_total{
+    position: relative;
+}
+
+/*Conteudo Menu*/
+
+.menu{
+    padding: 20px;
+    margin:0;
+    position: relative;
+    background-color: rgb(5, 5, 5);
+}
+
+.menu > hr{
+    width:98%;
+}
+
+.menu > button{
+    display: none;
+    cursor: pointer;
+    background-color: rgba(14, 180, 209, 0.37);
+    color: rgb(255, 255, 255);
+    border: solid 2px  rgba(0, 0, 255, 0.568);
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 1.6rem;
+    margin: 10px 0 0 5px;
+}
+
+.menu > button:hover{
+    background-color: rgba(12, 117, 136, 0.52);
+}
+
+.conteudo_logo, .conteudo_input_pesquisar, .conteudo_tecgrupo{
+    display: inline-block;
+}
+
+.conteudo_logo > .logo,
+.conteudo_tecgrupo > .link_tecgrupo{
+    font-family: 'fonte titulo',Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    color: blue;
+}
+
+.conteudo_logo{
+    margin: 0 10px 0;
+}
+
+.conteudo_input_pesquisar{
+    margin: 0 0 0 150px;
+}
+
+.conteudo_input_pesquisar > .input_pesquisar{
+    box-sizing: content-box;
+    width: 250px;
+    outline: none;
+    padding: 5px 0 5px 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px rgb(255, 255, 255);
+    font-size: 2.0rem;
+}
+
+.conteudo_input_pesquisar > .input_pesquisar:focus{
+    background-color: rgba(199, 192, 192, 0.76);
+}
+
+.conteudo_input_pesquisar > .input_pesquisar::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.conteudo_input_pesquisar > .input_pesquisar:focus::placeholder{
+    color:rgba(90, 88, 88, 0.623);
+}
+
+.conteudo_tecgrupo{
+    float: right;
+    margin: 30px 15px 0;
+}
+
+.conteudo_tecgrupo > .link_tecgrupo{
+    font-size: 2.5rem;
+}
+
+.conteudo_navegacao ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo_navegacao > ul > li{
+    display: inline-block;
+    margin: 0 5px 0;
+}
+
+.conteudo_navegacao > ul > li:last-child{
+    float: right;
+    margin: 10px 15px;
+}
+
+.conteudo_navegacao > ul > li > button{
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: solid 2px  blue;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 1.6rem;
+}
+
+.conteudo_navegacao > ul > li > button:hover{
+    background-color: rgba(59, 59, 158, 0.548);
+}
+
+.conteudo_navegacao a {
+    color: white;
+}
+
+/*Popup conteudo navegacao*/
+
+.popup_conteudo_navegacao{
+    position: absolute;
+    top:160px;
+    z-index: 1;
+}
+
+.popup_conteudo_navegacao > div{
+    display: inline-block;
+    background-color: rgb(11, 11, 12);
+    border: solid 1px rgba(27, 24, 211, 0.65);
+}
+
+div.ocultar{
+    display: none;
+}
+
+.popup_conteudo_navegacao  ul  li{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.popup_conteudo_navegacao  ul  li > a:hover{
+    background-color: rgba(34, 32, 133, 0.445);
+}
+
+.popup_conteudo_navegacao  ul  li > a{
+    padding: 10px;
+}
+
+.popup_conteudo_navegacao > .popup_noticias{
+    padding:10px;
+    margin: 0 0 0 0;
+}
+
+.popup_conteudo_navegacao > .popup_comparar{
+    padding:10px;
+    margin: 0 0 0 390px;
+}
+
+.popup_conteudo_navegacao > .popup_cupons_descontos{ 
+    padding: 10px;
+    margin: 0 0 0 490px;
+}
+
+.popup_noticias > ul, 
+.popup_noticias > div{
+    display: inline-block;
+}
+
+.opcoes_popup_noticias{
+    margin: 0 0 0 5px;
+    vertical-align: top;
+    color:white;
+}
+
+.opcoes_popup_noticias > div{
+    cursor: pointer;
+    width:100px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 15px 15px 0;
+}
+
+.opcoes_popup_noticias > div > div{
+    padding: 20px;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+.opcoes_popup_noticias > div > p{
+    font-size:1.2rem;
+}
+
+/*Conteudo redes sociais*/
+
+.conteudo_redes_sociais{
+    position: fixed;
+    top: 40vh;
+    margin:0 10px;
+}
+
+.redes_sociais > p{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.redes_sociais > img{
+    cursor: pointer;
+    width: 35px;
+    margin: 15px auto;
+}
+
+.redes_sociais > img:hover{
+    border-radius: 25px;
+    box-shadow: 0 0 2px 2px rgba(37, 37, 37, 0.705);
+    transform: scale(120%);
+}
+
+/*Conteudo redes sociais responsivo*/
+
+.conteudo_redes_sociais_responsivo{
+    float: right;
+    display: none;
+}
+
+.redes_sociais_responsivo > p{
+    display: inline-block;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 1rem;
+    color:white;
+    vertical-align: 20px;
+}
+
+.redes_sociais_responsivo > img{
+    cursor: pointer;
+    display: inline-block;
+    width: 15px;
+    margin: 15px auto;
+}
+
+.redes_sociais_responsivo > img:hover{
+    border-radius: 25px;
+    box-shadow: 0 0 2px 2px rgba(37, 37, 37, 0.705);
+    transform: scale(120%);
+}
+
+/*Google Ads*/
+.logo_google_ads{
+    background-image: linear-gradient(to right, rgb(17, 119, 17), rgb(13, 13, 92));
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    left: auto;
+    right:25px;
+    bottom: 0;
+    top:170px;
+}
+
+.conteudo_noticia > .logo_google_ads2{
+    background-image: linear-gradient(to right, rgb(17, 119, 17), rgb(13, 13, 92));
+    margin: 25px auto 0;
+    max-width: 600px;
+    width: 75%;
+}
+
+/*Conteudo noticia*/
+
+.conteudo_noticia{
+    padding:  15px 80px;
+}
+
+.noticia_nubank > h1{
+    text-align: center;
+}
+
+.noticia_nubank > .logo_nubank{
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.781),rgba(194, 96, 236, 0.801) 80%);
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.noticia_nubank > p{
+    text-align: justify;
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 40px auto 0 80px;
+}
+
+.noticia_app_mais_baixados,
+.noticia_app_mais_usados{
+    margin:75px 0 0;
+}
+
+.noticia_app_mais_baixados > h2, 
+.noticia_app_mais_usados > h2{
+    margin: 0 0 20px 90px;
+    font-size: 3.2rem;
+    text-align: left;
+}
+
+.noticia_app_mais_baixados > .aplicativo_banco_pan, 
+.noticia_app_mais_usados > .aplicativo_nubank{
+    width: 80%;
+    max-width: 500px;
+}
+
+.noticia_app_mais_baixados > ol,
+.noticia_app_mais_usados > ol{
+    padding: 0;
+    margin: 35px 0 0 110px;
+    font-size: 1.8rem;
+}
+
+.noticia_app_mais_baixados > ol > li,
+.noticia_app_mais_usados > ol > li{
+    margin: 15px 0;
+}
+
+@media (max-width: 1243px){
+    .logo_google_ads{
+        display: none;
+    }
+}
+
+@media (max-width: 876px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 663px){
+
+    .conteudo_redes_sociais_responsivo{
+        display: block;
+    }
+
+    .menu > button{
+        display: block;
+    }
+
+    .conteudo_logo, .conteudo_input_pesquisar, .conteudo_tecgrupo{
+        margin: 15px 0;
+        display: block;
+    }
+
+    .conteudo_logo{
+        text-align: center;
+    }
+
+    .conteudo_tecgrupo{
+        display: inline-block;
+        float: none;
+        margin: 30px 0 0 0; 
+    }
+
+    .conteudo_redes_sociais{
+        display: none;
+    }
+
+    .conteudo_navegacao > ul >li{
+        display: block;
+        margin: 15px 0;
+    }
+
+    .conteudo_navegacao > ul > li:last-child{
+        float: none;
+        margin:0;
+    }
+
+    .conteudo_navegacao{
+        display: none;
+    }
+
+    .popup_conteudo_navegacao{
+        position: absolute;
+        top:250px;
+        z-index: 10;
+    }
+
+    .popup_conteudo_navegacao > .popup_noticias,
+    .popup_conteudo_navegacao > .popup_comparar,
+    .popup_conteudo_navegacao > .popup_cupons_descontos{
+        margin: 0;
+    }
+    
+    .opcoes_popup_noticias{
+        overflow-x: scroll;
+        height: 255px;
+    }
+
+    .opcoes_popup_noticias > div{
+        display: block;
+    }
+
+    .conteudo_noticia{
+        padding:5px;
+    }
+
+    .noticia_nubank > p{
+        margin: 40px auto 0px auto; 
+    }
+
+    .noticia_app_mais_baixados > h2, 
+    .noticia_app_mais_usados > h2{
+        margin: 0 0 20px 20px;
+    }
+
+    .noticia_app_mais_baixados > ol,
+    .noticia_app_mais_usados > ol{
+        margin: 35px 0 0 70px;
+    }
+}

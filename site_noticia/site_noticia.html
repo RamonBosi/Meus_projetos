@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecInfo</title>
+    <link rel = 'stylesheet' href = './site_noticia_CSS.css'>
+    <script text = 'text/javascript' async src =  './site_noticia_JS.js'></script>
+</head>
+<body>
+    
+<div class ='conteudo_total'>
+
+    <div class = 'conteudo_menu'>
+        <div class ='menu'>
+
+            <div class ='conteudo_logo'>
+                <a href = '#' class ='logo'>TecInfo</a>
+            </div>
+            
+            <div class ='conteudo_input_pesquisar'>
+                <input placeholder="Pesquisar notícia" type= 'search' class ='input_pesquisar'>
+            </div>
+            
+            <div class = 'conteudo_tecgrupo'>
+                <a href = '#' class ='link_tecgrupo'>TecGrupo</a>
+            </div>
+
+            <div class ='conteudo_redes_sociais_responsivo'>
+                <div class ='redes_sociais_responsivo'>
+                    <p>COMPARTILHAR</p>
+                    <img class ='whatsapp' src = './imagens_site_noticia/redes_sociais/icone_whatsapp.ico'>
+                    <img class ='telegram' src = './imagens_site_noticia/redes_sociais/icone_telegram.ico'>
+                    <img class ='facebook' src = './imagens_site_noticia/redes_sociais/icone_facebook.ico'>
+                    <img class ='twitter' src = './imagens_site_noticia/redes_sociais/icone_twitter.ico'>
+                    <img class ='linkedin' src = './imagens_site_noticia/redes_sociais/icone_linkedin.ico'>
+                </div>
+            </div>
+
+            <hr>
+
+            <button onclick = 'mostrar_conteudo_navegacao()' class ='mostrar_conteudo_navegacao'>Menu</button>
+
+            <div class ='conteudo_navegacao'>
+                <ul>
+                    <li><button onmouseenter="mostrar_popup('popup_noticias')">Notícias</button></li>
+                    <li><a href = '#'>Últimas notícias</a></li>
+                    <li><a href = '#'>Mais lidas</a></li>
+                    <li><a href = '#'>Tutoriais</a></li>
+                    <li><a href = '#'>Colunas</a></li>
+                    <li><button onmouseenter="mostrar_popup('popup_comparar')">Comparar</button></li>
+                    <li><button onmouseenter="mostrar_popup('popup_cupons_descontos')">Cupons de Descontos</button></li>
+                    <li><a href = '#'>Testes de Velocidade</a></li>
+                </ul>
+
+                <div id ='popup_conteudo_navegacao' class ='popup_conteudo_navegacao ocultar'>
+                    <div onmouseleave="fechar_popup()" id ='popup_noticias' class ='popup_noticias ocultar'>
+                        <ul>
+                            <li><a href ='#'>Software</a></li>
+                            <li><a href = '#'>Segurança</a></li>
+                            <li><a href = '#'>Internet</a></li>
+                            <li><a href = '#'>Dispositivos móveis</a></li>
+                            <li><a href = '#'>Produtos</a></li>
+                            <li><a href = '#'>Ciência</a></li>
+                            <li><a href = '#'>Voxel</a></li>
+                            <li><a href = '#'>Minha série</a></li>
+                        </ul>
+
+                        <div class ='opcoes_popup_noticias'>
+                            <div>
+                                <div>Imagem</div>
+                                <h3>Titulo da nóticia 1</h3>
+                                <p>há 10 dias</p>
+                            </div>
+                            <div>
+                                <div>Imagem</div>
+                                <h3>Titulo da nóticia 2</h3>
+                                <p>há 10 dias</p>
+                            </div>
+                            <div>
+                                <div>Imagem</div>
+                                <h3>Titulo da nóticia 3</h3>
+                                <p>há 10 dias</p>
+                            </div>
+                            <div>
+                                <div>Imagem</div>
+                                <h3>Titulo da nóticia 4</h3>
+                                <p>há 10 dias</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div  onmouseleave="fechar_popup()" id ='popup_comparar' class ='popup_comparar ocultar'>
+                        <ul>
+                            <li><a href ='#'>Comparar TecInfo</a></li>
+                            <li><a href = '#'>Comparar Celulares</a></li>
+                        </ul>
+                    </div>
+                    <div  onmouseleave="fechar_popup()" id ='popup_cupons_descontos' class ='popup_cupons_descontos ocultar'>
+                        <ul>
+                            <li><a href ='#'>Cupom Casas Bahia</a></li>
+                            <li><a href = '#'>Cupom KaBum!</a></li>
+                            <li><a href = '#'>Cupom Americanas</a></li>
+                            <li><a href = '#'>Cupom AliExpress</a></li>
+                            <li><a href = '#'>Cupom de desconto Amazon</a></li>
+                            <li><a href = '#'>Todos os descontos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class ='conteudo_redes_sociais'>
+        <div class ='redes_sociais'>
+            <p>COMPARTILHAR</p>
+            <img class ='whatsapp' src = './imagens_site_noticia/redes_sociais/icone_whatsapp.ico'>
+            <img class ='telegram' src = './imagens_site_noticia/redes_sociais/icone_telegram.ico'>
+            <img class ='facebook' src = './imagens_site_noticia/redes_sociais/icone_facebook.ico'>
+            <img class ='twitter' src = './imagens_site_noticia/redes_sociais/icone_twitter.ico'>
+            <img class ='linkedin' src = './imagens_site_noticia/redes_sociais/icone_linkedin.ico'>
+        </div>
+    </div>
+
+    <img  class ='logo_google_ads' src = './imagens_site_noticia/logo_google_ads.png'>
+
+    <div class = 'conteudo_noticia'>
+
+        <div class = 'noticia_nubank'>
+            <h1>Nubank foi o app de banco mais usado no Brasil em 2021</h1>
+            
+            <img class ='logo_nubank' src ='./imagens_site_noticia/nubank_logo.png'>
+
+            <p>
+                Os aplicativos de banco e finanças foram baixados 5,9 bilhões de vezes em 2021, 
+                segundo o relatório State of Mobile 2022 elaborado pela empresa de consultoria App Annie.
+                No Brasil, as instituições financeiras tiveram 693 milhões de downloads, considerado os 
+                números da App Store e Google Play Store.
+            </p>
+
+            <p>
+                O Nubank foi o app de banco com maior número de usuários ativos por mês (MAU)
+                no ano passado com cerca de 37,7 milhões de usuários, contra 27,7 milhões em 2020. 
+                O PicPay vem em seguida, com 22,7 milhões de usuários (14,7 milhões em 2020). 
+                Entre os aplicativos financeiros mais baixados, a fintech ficou 
+                na quarta colocação, atrás do Banco Pan (1º), Iti Itaú (2º) e C6 
+                Bank (3º).
+                
+            </p>
+
+            <p>
+                O relatório aponta que o Nubank vem ganhando popularidade também no México. 
+                O banco brasileiro esteve entre os 10 aplicativos financeiros, tanto na categoria 
+                de mais downloads (6º posição), quanto em maior número de usuários ativos mensalmente 
+                (1,3 milhão).
+                
+            </p>
+
+            <p>
+                Na App Store, o aplicativo do Nubank, 
+                que conta com versões em espanhol e inglês, ocupa o 
+                primeiro lugar entre as soluções financeiras oferecidas 
+                para os dispositivos da Apple no Brasil. Já na Play Store, 
+                o banco tem mais de 50 milhões de downloads.
+            </p>
+        </div>
+
+        <img  class ='logo_google_ads2' src = './imagens_site_noticia/logo_google_ads.png'>
+
+        <div class ='noticia_app_mais_baixados'>
+            <h2>10 apps financeiros com mais downloads</h2>
+            
+            <img class = 'aplicativo_banco_pan' src = './imagens_site_noticia/aplicativo_banco_pan.png'>
+
+            <ol>
+                <li>Banco Pan</li>
+                <li>Iti Itaú</li>
+                <li>C6 Bank</li>
+                <li>Nubank</li>
+                <li>Blitz</li>
+                <li>Next</li>
+                <li>BTG+</li>
+                <li>Banco BV</li>
+                <li>Conta Digital BMG</li>
+                <li>Banco Inter</li>
+            </ol>
+        </div>
+
+        <img  class ='logo_google_ads2' src = './imagens_site_noticia/logo_google_ads.png'>
+
+        <div class ='noticia_app_mais_usados'>
+            <h2>10 apps financeiros ccom mais usuários</h2>
+
+            <img class = 'aplicativo_nubank' src = './imagens_site_noticia/aplicativo_nubank.png'>
+
+            <ol>
+                <li>Nubank</li>
+                <li>PicPay</li>
+                <li>C6 Bank</li>
+                <li>Banco Pan</li>
+                <li>Ame</li>
+                <li>Bradesco</li>
+                <li>Banco Inter</li>
+                <li>Mercado Pago</li>
+                <li>Binance</li>
+                <li>Banco do Brasil</li>
+            </ol>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
