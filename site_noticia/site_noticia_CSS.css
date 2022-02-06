@@ -13,6 +13,10 @@ body{
     font-size: 1.6rem;
 }
 
+body.ocultar_overflow{
+    overflow: hidden;
+}
+
 a{
     text-decoration: none;
 }
@@ -149,7 +153,7 @@ img{
     left:0;
     right:0;
     height: 100vh;
-    background-color: rgba(61, 55, 55, 0.712);
+    background-color: rgba(29, 25, 25, 0.931);
     z-index: 20;
 }
 
