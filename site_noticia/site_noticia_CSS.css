@@ -46,17 +46,13 @@ img{
 .menu > button{
     display: none;
     cursor: pointer;
-    background-color: rgba(14, 180, 209, 0.37);
+    background-color: rgba(20, 25, 26, 0.986);
     color: rgb(255, 255, 255);
     border: solid 2px  rgba(0, 0, 255, 0.568);
     border-radius: 20px;
     padding: 8px;
     font-size: 1.6rem;
     margin: 10px 0 0 5px;
-}
-
-.menu > button:hover{
-    background-color: rgba(12, 117, 136, 0.52);
 }
 
 .conteudo_logo, .conteudo_input_pesquisar, .conteudo_tecgrupo{
@@ -361,6 +357,24 @@ div.ocultar{
     margin: 15px 0;
 }
 
+@media (max-width: 1439px){
+    .popup_noticias > ul,
+    .popup_noticias > div{
+        display: block;
+    }
+
+    .opcoes_popup_noticias{
+        margin:0;
+        overflow-y: scroll;
+        height: 255px;
+    }
+
+    .opcoes_popup_noticias > div{
+        display: block;
+        margin:0 auto;
+    }
+}
+
 @media (max-width: 1243px){
     .logo_google_ads{
         display: none;
@@ -401,8 +415,12 @@ div.ocultar{
     .conteudo_redes_sociais{
         display: none;
     }
+    
+    .conteudo_navegacao{
+        display: none;
+    }
 
-    .conteudo_navegacao > ul >li{
+    .conteudo_navegacao > ul > li{
         display: block;
         margin: 15px 0;
     }
@@ -410,31 +428,6 @@ div.ocultar{
     .conteudo_navegacao > ul > li:last-child{
         float: none;
         margin:0;
-    }
-
-    .conteudo_navegacao{
-        display: none;
-    }
-
-    .popup_conteudo_navegacao{
-        position: absolute;
-        top:250px;
-        z-index: 10;
-    }
-
-    .popup_conteudo_navegacao > .popup_noticias,
-    .popup_conteudo_navegacao > .popup_comparar,
-    .popup_conteudo_navegacao > .popup_cupons_descontos{
-        margin: 0;
-    }
-    
-    .opcoes_popup_noticias{
-        overflow-x: scroll;
-        height: 255px;
-    }
-
-    .opcoes_popup_noticias > div{
-        display: block;
     }
 
     .conteudo_noticia{
