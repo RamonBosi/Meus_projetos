@@ -1,7 +1,6 @@
-Texto para ser usado na noticia
+# Texto para ser usado na noticia
 
-
-Titulo = Nubank foi o app de banco mais usado no Brasil em 2021
+## Nubank foi o app de banco mais usado no Brasil em 2021
 
 Os aplicativos de banco e finanças foram baixados 5,9 bilhões de vezes em 2021, 
 segundo o relatório State of Mobile 2022 elaborado pela empresa de consultoria App Annie.
@@ -27,27 +26,27 @@ para os dispositivos da Apple no Brasil. Já na Play Store,
 o banco tem mais de 50 milhões de downloads.
 
 
-Titulo = 10 apps financeiros com mais downloads
-Banco Pan
-Iti Itaú
-C6 Bank
-Nubank
-Blitz
-Next
-BTG+
-Banco BV
-Conta Digital BMG
-Banco Inter
+## 10 apps financeiros com mais downloads
+1. Banco Pan
+2. Iti Itaú
+3. C6 Bank
+4. Nubank
+5. Blitz
+6. Next
+7. BTG+
+8. Banco BV
+9. Conta Digital BMG
+10. Banco Inter
 
 
-Titulo = 10 apps financeiros com mais usuários
-Nubank
-PicPay
-C6 Bank
-Banco Pan
-Ame
-Bradesco
-Banco Inter
-Mercado Pago
-Binance
-Banco do Brasil
+## 10 apps financeiros com mais usuários
+1. Nubank
+2. PicPay
+3. C6 Bank
+4. Banco Pan
+5. Ame
+6. Bradesco
+7. Banco Inter
+8. Mercado Pago
+9. Binance
+10. Banco do Brasil
