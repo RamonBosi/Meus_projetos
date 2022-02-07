@@ -219,6 +219,10 @@ div.ocultar{
     margin: 15px 15px 0;
 }
 
+.opcoes_popup_noticias > div:hover{
+   transform: scale(105%);
+}
+
 .opcoes_popup_noticias > div > div{
     padding: 20px;
     text-align: center;
@@ -370,8 +374,13 @@ div.ocultar{
     }
 
     .opcoes_popup_noticias > div{
+        width:70%;
         display: block;
-        margin:0 auto;
+        margin:20px auto 0;
+    }
+
+    .opcoes_popup_noticias > div > div{
+        padding: 40px 10px;
     }
 }
 
