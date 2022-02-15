@@ -78,7 +78,7 @@ button.mudanca_selecionada{
     overflow-y: scroll;
     width: 70%;
     max-width: 384px;
-    height: 550px;
+    height: 430px;
     background-color: rgba(0, 0, 0, 0.897);
     position: absolute;
     top: 50%;
@@ -303,7 +303,7 @@ button.mudanca_selecionada{
     }
     
     .conteudo_tela_login{
-        height: 77%;
+        /* height: 77%; */
         top: 55%;
         padding: 15px;
     }
