@@ -11,7 +11,7 @@ body{
 
 /*------Tela de fundo-----*/
 .tela_fundo_degrade{
-    background-image: linear-gradient(90deg, rgba(0, 0, 129, 0.911), rgba(74, 4, 121, 0.877));
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.911), rgba(74, 4, 121, 0.877));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
