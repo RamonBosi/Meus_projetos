@@ -1,0 +1,352 @@
+body{
+    background-color: darkslategray;
+    margin: 0;
+}
+
+.conteudo_total{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/*------Tela de fundo-----*/
+.tela_fundo_degrade{
+    background-image: linear-gradient(90deg, rgba(0, 0, 129, 0.911), rgba(74, 4, 121, 0.877));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.tela_fundo_imagem{
+    background-image:url('./imagens_tela_login/tela_fundo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*----conteudo mudar aparencia----*/
+.conteudo_mudar_aparencia{
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.815), rgb(133, 124, 124));
+    position: absolute;
+    display: inline-block;
+    margin: 15px 15px 0;
+    border-radius:25px;
+    padding:10px;
+}
+
+.conteudo_mudar_tela_fundo > h3{
+    text-align: center;
+    font-size: 1.3em;
+    margin: 15px 0; 
+}
+
+.conteudo_mudar_tela_fundo > button{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(99, 96, 96, 0.808);
+    color: white;
+    box-shadow: 2px 2px 1px 1.5px rgb(66, 65, 65);
+    border-radius: 15px;
+    display: block;
+    font-size: 1.3em;
+    border: 1.5px solid black;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+button.mudanca_selecionada{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.conteudo_mudar_tela_fundo > button:hover{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.conteudo_mudar_tela_fundo > button:active{
+   box-shadow: none;
+}
+
+/*------conteudo tela de login--------*/
+.conteudo_tela_login{
+    width: 70%;
+    max-width: 384px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.897);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+}
+
+.conteudo_tela_login > h2{
+    font-size:2.1em;
+}
+
+.conteudo_tela_login > h2, 
+.login_rede_sociais > a,
+.autenticacao > p{
+    text-align: center;
+}
+
+.autenticacao > button, .login_usuario > input{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login_rede_sociais > a, .login_usuario > input, .autenticacao > button{
+    display: block;
+}
+
+.login_rede_sociais{
+    margin-bottom: 10px;
+}
+
+.login_rede_sociais > a{
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.164);
+    color:white;
+    margin: 0px;
+    margin-top: 5px;
+    padding: 8px 8px 8px 50px;
+    font-size: 1.4em;
+}
+
+.login_rede_sociais > a:hover{
+    background-color: rgba(8, 8, 105, 0.794);
+}
+
+.login_rede_sociais > a[href = '#facebook']{
+    background-image: url('./imagens_tela_login/icone_facebook.ico');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: 8px ;
+    margin: 0px;
+}
+
+.login_rede_sociais > a[href = '#google']{
+    background-image: url('./imagens_tela_login/icone_google.png');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: 5px;
+}
+
+.login_rede_sociais > a[href ='#apple']{
+    background-image: url('./imagens_tela_login/icone_apple.ico');
+    background-repeat: no-repeat;
+    background-size: 38px;
+    background-position: 10px;
+}
+
+.login_usuario{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.login_usuario > input{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+    font-size: 1.2em;
+    padding: 1px 1px 1px 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.login_usuario > input:focus{
+    outline: 3px solid blue;
+}
+
+.login_usuario > input::placeholder{
+    color:rgba(0, 0, 0, 0.534);
+}
+
+/*-----icones dos inputs de login_usuario----*/
+.login_usuario > img.icone_email{
+    position: absolute;
+    width: 30px;
+    top:8px;
+    left:13px;
+}
+
+.login_usuario > img.icone_senha{
+    position: absolute;
+    width: 30px;
+    top:62px;
+    left:12px;
+}
+/*---------------------------------------------*/
+
+.autenticacao > button{
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5em;
+    background-image: linear-gradient(45deg, rgb(8, 8, 141), rgb(0, 106, 138));
+    color:white;
+    font-weight: bold;
+    border: none;
+}
+
+.autenticacao > button:hover{
+    background-image: linear-gradient(45deg, rgba(8, 8, 141, 0.918), rgba(0, 106, 138, 0.918));
+    color:white;
+}
+
+.autenticacao > button:active{
+    background-image: linear-gradient(45deg, rgba(8, 8, 141, 0.575), rgba(0, 106, 138, 0.534));
+    color:white;
+}
+
+.autenticacao > p{
+    font-size: 1em;
+}
+
+.autenticacao > p:nth-child(2){
+    margin:0;
+    margin-top: 40px;
+}
+
+.autenticacao > p > a{
+    color:rgb(0, 17, 255)
+}
+
+.autenticacao > p:nth-child(2) > a[href ='#esqueci_minha_senha']{
+    text-decoration: none;
+}
+
+.autenticacao > p:nth-child(3) > a[href ='#cadastre_se']{
+    font-weight: bold;
+}
+
+/*-----Responsividade-----*/
+@media (min-width:425px) and (max-width: 871px){
+    
+    .conteudo_mudar_aparencia{
+        margin: 10px 8px;
+        padding: 4px;
+    }
+    
+    .conteudo_tela_login{
+        height: 77%;
+        top: 55%;
+        padding: 12px;
+    }
+
+    .conteudo_tela_login > h2{
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .conteudo_mudar_tela_fundo > button,.conteudo_mudar_tela_fundo > h3{
+        display: inline-block;
+        font-size: 0.8em;
+    }
+
+    .login_rede_sociais > a[href = '#facebook'],
+    .login_rede_sociais > a[href = '#google'],
+    .login_rede_sociais > a[href = '#apple']{
+        background-size: 30px ;
+    }
+
+    .login_rede_sociais > a{
+        font-size: 1.3em;
+    }
+    
+    .login_usuario > input{
+        font-size: 1.1em;
+    }
+
+    .login_usuario > img.icone_email{
+        width: 25px;
+        top:10px;
+    }
+    
+    .login_usuario > img.icone_senha{
+        width: 25px;
+        top:65px;
+    }
+
+    .autenticacao > button{
+        font-size: 1.2em;
+    }
+
+
+    .autenticacao > p{
+        font-size: 0.8em;
+    }
+
+    .autenticacao > p:nth-child(2){
+        margin:0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:424px){
+    
+    .conteudo_mudar_aparencia{
+        margin: 10px 8px;
+        padding: 4px;
+    }
+    
+    .conteudo_tela_login{
+        height: 77%;
+        top: 55%;
+        padding: 15px;
+    }
+
+    .conteudo_tela_login > h2{
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .conteudo_mudar_tela_fundo > button,.conteudo_mudar_tela_fundo > h3{
+        display: inline-block;
+        font-size: 0.8em;
+    }
+
+    .login_rede_sociais > a[href = '#facebook'],
+    .login_rede_sociais > a[href = '#google'],
+    .login_rede_sociais > a[href = '#apple']{
+        background-size: 20px ;
+    }
+
+    .login_rede_sociais > a{
+        font-size: 1em;
+    }
+    
+    .login_usuario > input{
+        font-size: 1em;
+    }
+
+    .login_usuario > img.icone_email{
+        width: 25px;
+        top:10px;
+    }
+    
+    .login_usuario > img.icone_senha{
+        width: 25px;
+        top:65px;
+    }
+
+    .autenticacao > button{
+        font-size: 1.2em;
+    }
+
+    .autenticacao > p{
+        font-size: 0.8em;
+    }
+
+    .autenticacao > p:nth-child(2){
+        margin:0;
+        margin-top: 20px;
+    }
+}
